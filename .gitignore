@@ -1,0 +1,7 @@
+jimin/
+.env
+.venv/
+venv/
+vectors_store/
+__pycache__/
+*.pyc
