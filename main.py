@@ -44,8 +44,8 @@ chunk_overlap = 300
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=chunk_size, chunk_overlap=chunk_overlap)
 final_splitted_docs = text_splitter.split_documents(header_splitted_docs)
 
-# 임베딩 단계 (로컬에 있는 모델)
-# cpu
+# 임베딩 단계 
+# cpu(노트북에서 실험하였기 때문)
 embeddings = FastEmbedEmbeddings(model_name="BAAI/bge-small-en-v1.5")
 
 vectorstore = None
